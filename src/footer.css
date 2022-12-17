@@ -2,5 +2,12 @@
   opacity: 50%;
   font-size: 12px;
   margin: 0px auto;
-  max-width: 150px;
+  margin-top: 10px;
+  max-width: 200px;
+  color: white;
+}
+
+a:link,
+a:visited {
+  color: white;
 }
