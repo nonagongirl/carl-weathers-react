@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+:root {
+  --background-color: rgb(240, 247, 255);
+  --header-color: crimson;
+  --text-shadow: 0px 0px 6px rgba(221, 226, 255, 0.7);
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+body {
+  background-image: url(../public/media/carlhot.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding-top: 30px;
+}
+h1,
+h1,
+h5 {
+  color: var(--header-color);
+  font-family: "Pacifico", cursive;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px;
+  margin: auto;
+  text-shadow: var(--text-shadow);
+}
+h5 {
+  text-align: left;
+}

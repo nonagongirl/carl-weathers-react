@@ -1,0 +1,25 @@
+.appBoxes {
+  border: 1px solid rgb(168, 168, 168);
+  padding: 20px;
+  margin: 0px auto;
+  max-width: 500px;
+  border-radius: 5px;
+}
+
+.container {
+  padding: 25px;
+}
+
+button {
+  width: 60px;
+}
+
+#carl-button,
+#my-location-button {
+  width: 122px;
+  color: white;
+}
+
+#searchbox {
+  width: 250px;
+}
