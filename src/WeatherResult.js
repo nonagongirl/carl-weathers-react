@@ -41,6 +41,7 @@ export default function WeatherResult() {
           </div>
         </div>
       </div>
+      <WeatherResult />
     </div>
   );
 }

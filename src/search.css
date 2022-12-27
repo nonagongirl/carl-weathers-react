@@ -12,12 +12,15 @@
 
 button {
   width: 60px;
+  margin-left: 5px;
 }
 
 #carl-button,
 #my-location-button {
   width: 122px;
   color: white;
+  margin: 5px;
+  margin-left: 0px;
 }
 
 #searchbox {
