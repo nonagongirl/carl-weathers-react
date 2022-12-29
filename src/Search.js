@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import WeatherResult from "./WeatherResult";
+// import WeatherResult from "./WeatherResult";
 import "./search.css";
 
 import "bootstrap/dist/css/bootstrap.min.css";

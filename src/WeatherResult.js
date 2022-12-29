@@ -9,7 +9,6 @@ export default function WeatherResult() {
           <h2 className="searchedCity"> London</h2>
           <div className="weatherDesc">Overcast clouds </div>
           <div className="windDiv">
-            {" "}
             Wind: <span id="wind">2</span> m/s
           </div>
           <div className="d-flex justify-content-center">
@@ -18,14 +17,13 @@ export default function WeatherResult() {
             <img
               alt="weather emoji"
               id="weatherEmoji"
-              src="https://static.vecteezy.com/system/resources/thumbnails/000/551/374/small/sun_012.jpg"
+              src="http://openweathermap.org/img/wn/04n@2x.png "
               width="42"
             />
           </div>
         </div>
 
         <div className="col-sm-6 ">
-          {" "}
           <img
             src="./media/carlhot.jpg"
             className="mx-auto d-block carlPic img-fluid"
@@ -36,12 +34,11 @@ export default function WeatherResult() {
       <div className="row">
         <div className="col-sm-12">
           <div className="lastUpdated">
-            Last updated:{" "}
+            Last updated:
             <span id="date-result">Wednesday 26 Oct at 23:28</span>
           </div>
         </div>
       </div>
-      <WeatherResult />
     </div>
   );
 }

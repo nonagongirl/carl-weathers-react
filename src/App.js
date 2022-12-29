@@ -10,9 +10,7 @@ export default function App() {
       <h1>Whatever the Carl Weathers</h1>
 
       <Search />
-
       <WeatherResult />
-
       <Footer />
     </div>
   );
