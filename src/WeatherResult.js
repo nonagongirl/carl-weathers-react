@@ -18,7 +18,7 @@ export default function WeatherResult() {
             <img
               alt="weather emoji"
               id="weatherEmoji"
-              src="http://openweathermap.org/img/wn/04n@2x.png"
+              src="https://static.vecteezy.com/system/resources/thumbnails/000/551/374/small/sun_012.jpg"
               width="42"
             />
           </div>
