@@ -6,7 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 export default function Footer() {
   return (
     <div className="Footer">
-      <a href="https://github.com/nonagongirl/carl-weathers-project">
+      <a href="https://github.com/nonagongirl/carl-weathers-react">
         Open-source code{" "}
       </a>{" "}
       by{" "}
