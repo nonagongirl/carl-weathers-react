@@ -1,23 +1,24 @@
 import React from "react";
+import { getBsProps } from "react-bootstrap/lib/utils/bootstrapUtils";
 import "./WeatherResult.css";
 
-export default function WeatherResult() {
+export default function WeatherResult(props) {
   return (
     <div className="WeatherResult appBoxes centered ">
       <div className="row">
         <div className="col-sm-6">
-          <h2 className="searchedCity"> London</h2>
-          <div className="weatherDesc">Overcast clouds </div>
+          <h2 className="searchedCity"> {props.city}</h2>
+          <div className="weatherDesc">{props.description} </div>
           <div className="windDiv">
-            Wind: <span id="wind">2</span> m/s
+            Wind: <span id="wind">{props.wind}</span> m/s
           </div>
           <div className="d-flex justify-content-center">
-            <span className="tempNumber">15</span>
+            <span className="tempNumber">{props.temperature}</span>
             <span className="tempUnit">c</span>
             <img
-              alt="weather emoji"
+              alt={props.description}
               id="weatherEmoji"
-              src="http://openweathermap.org/img/wn/04n@2x.png "
+              src={props.icon}
               width="42"
             />
           </div>

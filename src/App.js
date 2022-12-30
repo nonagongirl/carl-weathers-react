@@ -9,8 +9,8 @@ export default function App() {
     <div className="App">
       <h1>Whatever the Carl Weathers</h1>
 
-      <Search />
-      <WeatherResult />
+      <Search defaultCity="New york" />
+
       <Footer />
     </div>
   );
