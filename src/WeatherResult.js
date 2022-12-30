@@ -1,5 +1,5 @@
 import React from "react";
-
+import FormattedDate from "./FormattedDate.js";
 import "./WeatherResult.css";
 
 export default function WeatherResult(props) {
@@ -36,7 +36,10 @@ export default function WeatherResult(props) {
         <div className="col-sm-12">
           <div className="lastUpdated">
             Last updated:
-            <span id="date-result">Wednesday 26 Oct at 23:28</span>
+            <span id="date-result">
+              {" "}
+              <FormattedDate date={props.date} />
+            </span>
           </div>
         </div>
       </div>
