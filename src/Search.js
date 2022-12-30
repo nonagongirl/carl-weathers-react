@@ -4,7 +4,6 @@ import WeatherResult from "./WeatherResult";
 import "./search.css";
 
 import "bootstrap/dist/css/bootstrap.min.css";
-import { isContentEditable } from "@testing-library/user-event/dist/utils";
 
 export default function Search(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });

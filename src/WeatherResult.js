@@ -1,5 +1,5 @@
 import React from "react";
-import { getBsProps } from "react-bootstrap/lib/utils/bootstrapUtils";
+
 import "./WeatherResult.css";
 
 export default function WeatherResult(props) {

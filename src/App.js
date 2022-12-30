@@ -1,7 +1,7 @@
 import React from "react";
 import Footer from "./Footer";
 import Search from "./Search";
-import WeatherResult from "./WeatherResult";
+
 import "./styles.css";
 
 export default function App() {
