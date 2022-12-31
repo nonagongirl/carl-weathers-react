@@ -88,6 +88,6 @@ export default function Search(props) {
     );
   } else {
     searchCity();
-    return "LOADING...";
+    return <div className="text-center font-weight-bold m-5">LOADING...</div>;
   }
 }
