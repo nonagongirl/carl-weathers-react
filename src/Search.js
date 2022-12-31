@@ -42,7 +42,6 @@ export default function Search(props) {
     return (
       <div className="Search container">
         <div className="appBoxes">
-          At your current location it's 22:47 on Wednesday 26 Oct
           <form className="searching" onSubmit={handleSubmit}>
             <strong>Choose a city</strong>
             <br />
@@ -78,6 +77,9 @@ export default function Search(props) {
               Show me Carl!
             </button>
           </form>
+          <div className="currentTime">
+            Your date and time: 22:47 on Wednesday 26 Oct
+          </div>
         </div>
         <div className="mt-4">
           <WeatherResult data={weatherData} />{" "}

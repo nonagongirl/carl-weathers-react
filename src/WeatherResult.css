@@ -6,6 +6,7 @@
   max-width: 550px;
   border-radius: 5px;
   box-shadow: 1px 1px 5px grey;
+  line-height: 1;
 }
 
 .centered,
@@ -20,9 +21,14 @@
 }
 
 .tempUnit {
-  font-size: 20px;
-  margin-right: 20px;
+  font-size: 13px;
+  margin: auto 0;
 }
+
+.tempUnit .align-top {
+  margin-top: 10px;
+}
+
 .tempLinks {
   margin: auto 0;
   font-size: 14px;
@@ -32,6 +38,7 @@
   margin: auto 0;
   border-radius: 4px;
   width: 60px;
+  margin-right: 4px;
 }
 
 #weatherEmoji:hover {
@@ -43,6 +50,11 @@
 }
 
 .lastUpdated {
+  opacity: 70%;
+  font-size: 12px;
+}
+
+.currentTime {
   opacity: 70%;
   font-size: 12px;
 }
