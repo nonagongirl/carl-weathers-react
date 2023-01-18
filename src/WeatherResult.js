@@ -37,8 +37,8 @@ export default function WeatherResult(props) {
       </div>
       <div className="row">
         <div className="col-sm-12">
-          <div className="lastUpdated">
-            Last updated:{" "}
+          <div className="lastUpdated mt-2">
+            Last updated:
             <span id="date-result">
               <FormattedDate date={props.data.date} />
             </span>

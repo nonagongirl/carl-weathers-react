@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
-import WeatherResult from "./WeatherResult";
-
+import WeatherResult from "./WeatherResult.js";
+import WeatherForecast from "./WeatherForecast.js";
 import "./search.css";
 
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -82,7 +82,10 @@ export default function Search(props) {
           </div>
         </div>
         <div className="mt-4">
-          <WeatherResult data={weatherData} />{" "}
+          <WeatherResult data={weatherData} />
+        </div>
+        <div className="mt-4">
+          <WeatherForecast />
         </div>
       </div>
     );
