@@ -20,6 +20,7 @@ export default function Search(props) {
       description: response.data.condition.description,
       wind: response.data.wind.speed,
       city: response.data.city,
+      feels: Math.round(response.data.temperature.feels_like),
     });
   }
 
@@ -85,7 +86,7 @@ export default function Search(props) {
           <WeatherResult data={weatherData} />
         </div>
         <div className="mt-4">
-          <WeatherForecast />
+          <WeatherForecast data={weatherData} />
         </div>
       </div>
     );

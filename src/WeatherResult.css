@@ -79,3 +79,9 @@
   padding: 0px;
   cursor: pointer;
 }
+
+.feelsLike {
+  font-size: 10px;
+  text-align: right;
+  opacity: 60%;
+}

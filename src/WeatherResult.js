@@ -18,8 +18,14 @@ export default function WeatherResult(props) {
               src={props.data.icon}
               width="42"
             />
-            <TemperatureUnits celsius={props.data.temperature} />
+            <TemperatureUnits
+              celsius={props.data.temperature}
+              feels={props.data.feels}
+            />
           </div>
+          {/* <div className="feelsLike mt-2">
+            Feels like: <span id="feelsLike">{props.data.feels}</span>
+          </div> */}
 
           <div className="weatherDesc mt-2">{props.data.description} </div>
           <div className="windDiv mt-2">

@@ -1,0 +1,25 @@
+.WeatherForecast {
+  text-align: center;
+}
+
+.WeatherEmoji {
+  margin: 0 auto;
+  border-radius: 4px;
+  width: 60px;
+  align-items: center;
+}
+
+.weatherEmoji:hover {
+  background-color: var(--background-color);
+  border-radius: 8px;
+  transition-duration: 0.3s;
+  padding: 0px;
+  cursor: pointer;
+}
+
+.col:hover {
+  cursor: pointer;
+  background-color: var(--background-color);
+  transition-duration: 0.5s;
+  border-radius: 10px;
+}
