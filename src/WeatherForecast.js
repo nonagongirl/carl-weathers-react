@@ -12,14 +12,19 @@ export default function WeatherForecast(props) {
   }
 
   if (loaded) {
-    console.log(forecast);
     return (
       <div className="WeatherForecast appBoxes centered">
         <h5> Your Forecast:</h5>
         <div className="row">
-          <div className="col-sm-3">
-            <WeatherForecastDay data={forecast[0]} />
-          </div>
+          {forecast.map(function (dailyForecast, index) {
+            if (index < 6) {
+              return (
+                <div className="col" key={index}>
+                  <WeatherForecastDay data={dailyForecast} />
+                </div>
+              );
+            }
+          })}
         </div>
       </div>
     );
@@ -28,6 +33,5 @@ export default function WeatherForecast(props) {
     const forecastApiKey = "cbbfb900d7a3c5f058f2a44a54t3o340";
     let forecastApiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${forecastCity}&key=${forecastApiKey}&units=metric`;
     axios.get(forecastApiUrl).then(handleResponse);
-    console.log(forecastApiUrl);
   }
 }
