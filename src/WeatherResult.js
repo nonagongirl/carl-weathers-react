@@ -1,8 +1,9 @@
 import React from "react";
 import FormattedDate from "./FormattedDate.js";
-import "./WeatherResult.css";
 import TemperatureUnits from "./TemperatureUnits.js";
+import CarlPhotoResult from "./CarlPhotoResult.js";
 
+import "./WeatherResult.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function WeatherResult(props) {
@@ -34,11 +35,7 @@ export default function WeatherResult(props) {
         </div>
 
         <div className="col-sm-6 ">
-          <img
-            src="./media/carlhot.jpg"
-            className="mx-auto d-block carlPic img-fluid"
-            alt="carl weathers"
-          />
+          <CarlPhotoResult temperature={props.data.temperature} />
         </div>
       </div>
       <div className="row">
