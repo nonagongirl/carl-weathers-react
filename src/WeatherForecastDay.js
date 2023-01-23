@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function (props) {
+export default function WeatherForecastDay(props) {
   function maxTemperature() {
     return Math.round(props.data.temperature.maximum);
   }
@@ -25,7 +25,7 @@ export default function (props) {
     <div className="weatherForecastDay">
       <div> {day()} </div>
       <div className="WeatherEmoji">
-        <img className="WeatherEmoji" src={weatherIcon()} />
+        <img className="WeatherEmoji" src={weatherIcon()} alt="weather icon" />
       </div>
       <div>
         {maxTemperature()}° / {minTemperature()}°
