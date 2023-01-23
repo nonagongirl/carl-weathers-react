@@ -27,3 +27,9 @@ button {
   margin-top: 8px;
   width: 250px;
 }
+
+input::placeholder {
+  font-size: smaller;
+  opacity: 0.7;
+  color: grey;
+}

@@ -62,13 +62,7 @@ export default function Search(props) {
               Go!
             </button>
             <br />
-            <button
-              type="submit"
-              className="btn btn-primary btn-sm"
-              id="my-location-button"
-            >
-              Use my location
-            </button>
+
             <button
               type="submit"
               className="btn btn-info btn-sm "
@@ -78,9 +72,9 @@ export default function Search(props) {
               Show me Carl!
             </button>
           </form>
-          <div className="currentTime">
+          {/* <div className="currentTime">
             Your date and time: 22:47 on Wednesday 26 Oct
-          </div>
+          </div> */}
         </div>
         <div className="mt-4">
           <WeatherResult data={weatherData} />

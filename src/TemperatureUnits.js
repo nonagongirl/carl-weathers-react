@@ -36,9 +36,9 @@ export default function TemperatureUnits(props) {
             </span>
           </div>
         </div>
-        <div className="row ">
+        <div className="row justify-content-center">
           <div className="feelsLike">
-            Feels like <span id="feelsLike">{feelsCelsius}°C</span>
+            Feels like <span id="feelsLike"> {feelsCelsius}°C</span>
           </div>
         </div>
       </div>
@@ -46,7 +46,7 @@ export default function TemperatureUnits(props) {
   } else {
     return (
       <div className="wholeDaily">
-        <div className="row">
+        <div className="row justify-content-center">
           <div className="temperatureUnits  p-2">
             <span className="tempNumber">{fahrenheit}</span>
             <span className="tempUnit align-top">
