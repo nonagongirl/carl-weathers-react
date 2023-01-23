@@ -27,7 +27,7 @@ export default function WeatherResult(props) {
             Feels like: <span id="feelsLike">{props.data.feels}</span>
           </div> */}
 
-          <div className="weatherDesc mt-2">{props.data.description} </div>
+          <div className="weatherDesc mt-3">{props.data.description} </div>
           <div className="windDiv mt-2">
             Wind: <span id="wind">{props.data.wind}</span> m/s
           </div>
