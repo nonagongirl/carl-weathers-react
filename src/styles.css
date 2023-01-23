@@ -36,3 +36,15 @@ h1 {
 h5 {
   text-align: left;
 }
+
+@media (max-width: 450px) {
+  #searchbox {
+    width: 60%;
+  }
+  h1 {
+    font-size: 45px;
+  }
+  h5 {
+    font-size: 23px;
+  }
+}
