@@ -8,7 +8,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function Search(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
-  let [city, setCity] = useState(props.defaultCity);
+  let [city, setCity] = useState(" ");
+
+  // if weather data not ready show search box
 
   function handleResponse(response) {
     setWeatherData({
@@ -24,7 +26,7 @@ export default function Search(props) {
     });
   }
 
-  function searchCity() {
+  function searchCity(event) {
     const apiKey = "cbbfb900d7a3c5f058f2a44a54t3o340";
     let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
@@ -85,7 +87,34 @@ export default function Search(props) {
       </div>
     );
   } else {
-    searchCity();
-    return <div className="text-center font-weight-bold m-5">LOADING...</div>;
+    return (
+      <div className="Search container">
+        <div className="appBoxes">
+          <form className="searching" onSubmit={handleSubmit}>
+            <strong>Choose a city</strong>
+            <br />
+            <input
+              type="search"
+              id="searchbox"
+              placeholder="Search🔎"
+              autoComplete="off"
+              autofocus="on"
+              onChange={handleCityChange}
+            />
+            <button
+              type="submit"
+              className="btn btn-danger btn-sm"
+              id="go-Button"
+            >
+              Go!
+            </button>
+          </form>
+        </div>
+        <div className="text-center font-weight-bold mt-4">
+          Which Carl Weathers will your weather reveal?
+        </div>
+        ;
+      </div>
+    );
   }
 }
