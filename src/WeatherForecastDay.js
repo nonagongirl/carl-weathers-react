@@ -23,7 +23,7 @@ export default function WeatherForecastDay(props) {
 
   return (
     <div className="weatherForecastDay">
-      <div> {day()} </div>
+      <div className="font-weight-bold"> {day()} </div>
       <div className="WeatherEmoji">
         <img className="WeatherEmoji" src={weatherIcon()} alt="weather icon" />
       </div>

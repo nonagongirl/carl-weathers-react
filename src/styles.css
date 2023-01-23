@@ -5,9 +5,10 @@
   --header-color: crimson;
   --text-shadow: 0px 0px 6px rgba(221, 226, 255, 0.7);
 }
-
+.App {
+  font-family: "Nunito", sans-serif;
+}
 .App .h1 {
-  font-family: sans-serif;
   text-align: center;
 }
 

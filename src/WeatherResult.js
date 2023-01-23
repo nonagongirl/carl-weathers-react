@@ -11,7 +11,7 @@ export default function WeatherResult(props) {
     <div className="WeatherResult appBoxes centered ">
       <div className="row">
         <div className="col-sm-6">
-          <h2 className="searchedCity mt-3"> {props.data.city}</h2>
+          <h2 className="mt-3 font-weight-bold"> {props.data.city}</h2>
           <div className="d-flex justify-content-around mt-3">
             <img
               alt={props.data.description}

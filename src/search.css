@@ -13,6 +13,7 @@
 button {
   width: 60px;
   margin-left: 5px;
+  font-family: "Nunito", sans-serif;
 }
 
 #carl-button,
@@ -26,6 +27,7 @@ button {
 #searchbox {
   margin-top: 8px;
   width: 250px;
+  font-family: "Nunito", sans-serif;
 }
 
 input::placeholder {
