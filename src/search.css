@@ -28,10 +28,23 @@ button {
   margin-top: 8px;
   width: 250px;
   font-family: "Nunito", sans-serif;
+  border-radius: 6px;
 }
 
 input::placeholder {
   font-size: smaller;
   opacity: 0.7;
   color: grey;
+}
+
+@media (max-width: 450px) {
+  #searchbox {
+    width: 60%;
+  }
+  h1 {
+    font-size: 45px;
+  }
+  h5 {
+    font-size: 23px;
+  }
 }

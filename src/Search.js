@@ -113,7 +113,6 @@ export default function Search(props) {
         <div className="text-center font-weight-bold mt-4">
           Which Carl Weathers will your weather reveal?
         </div>
-        ;
       </div>
     );
   }
